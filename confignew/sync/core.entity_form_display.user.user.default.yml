@@ -1,0 +1,100 @@
+uuid: 9b8183df-3163-49c0-a201-220d7f80150a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_basic_
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_hra
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - path
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_basic_:
+    type: number
+    weight: 35
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_designation:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_facebook:
+    type: link_default
+    weight: 32
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hra:
+    type: number
+    weight: 36
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_linkedin:
+    type: link_default
+    weight: 34
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_twitter:
+    type: link_default
+    weight: 33
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    type: image_image
+    weight: -1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden: {  }

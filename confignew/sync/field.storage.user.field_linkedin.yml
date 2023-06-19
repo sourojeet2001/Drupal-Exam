@@ -1,0 +1,19 @@
+uuid: b2ee84ae-00b5-4a5b-a5da-22d8f5cd4c6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_linkedin
+field_name: field_linkedin
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

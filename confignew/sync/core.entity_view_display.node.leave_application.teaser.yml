@@ -1,0 +1,38 @@
+uuid: 12f2c29b-e618-4363-8752-d42b4cf39377
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leave_application.body
+    - field.field.node.leave_application.field_end_date
+    - field.field.node.leave_application.field_leave_tyep
+    - field.field.node.leave_application.field_start_
+    - field.field.node.leave_application.field_supporting_document
+    - node.type.leave_application
+  module:
+    - text
+    - user
+id: node.leave_application.teaser
+targetEntityType: node
+bundle: leave_application
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_end_date: true
+  field_leave_tyep: true
+  field_start_: true
+  field_supporting_document: true

@@ -1,0 +1,43 @@
+uuid: 3dbda1d9-6146-408e-a362-cbd802d4bca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave_application
+    - node.type.salary_details
+  module:
+    - admin_toolbar_search
+    - node
+    - system
+    - toolbar
+    - tour
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer users'
+  - 'change own username'
+  - 'create leave_application content'
+  - 'create salary_details content'
+  - 'delete any leave_application content'
+  - 'delete any salary_details content'
+  - 'delete leave_application revisions'
+  - 'delete own leave_application content'
+  - 'delete own salary_details content'
+  - 'edit any leave_application content'
+  - 'edit any salary_details content'
+  - 'edit own leave_application content'
+  - 'edit own salary_details content'
+  - 'revert leave_application revisions'
+  - 'use admin toolbar search'
+  - 'view all revisions'
+  - 'view leave_application revisions'
+  - 'view own unpublished content'
+  - 'view salary_details revisions'
+  - 'view user email addresses'

@@ -1,0 +1,21 @@
+uuid: b465998d-e8e5-45ac-9045-fd9bcaee5fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_
+    - node.type.leave_application
+  module:
+    - datetime
+id: node.leave_application.field_start_
+field_name: field_start_
+entity_type: node
+bundle: leave_application
+label: 'Start Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

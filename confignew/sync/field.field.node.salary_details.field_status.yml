@@ -1,0 +1,21 @@
+uuid: 0242f896-4310-460a-bb76-10b6b0ac7978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.salary_details
+  module:
+    - options
+id: node.salary_details.field_status
+field_name: field_status
+entity_type: node
+bundle: salary_details
+label: Status
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

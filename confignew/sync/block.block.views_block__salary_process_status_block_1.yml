@@ -1,0 +1,30 @@
+uuid: 960f8ae1-6f5e-4b0b-b462-5525ca513f90
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.salary_process_status
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__salary_process_status_block_1
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:salary_process_status-block_1'
+settings:
+  id: 'views_block:salary_process_status-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /my-salary-details

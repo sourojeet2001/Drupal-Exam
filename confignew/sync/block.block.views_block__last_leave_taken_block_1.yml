@@ -1,0 +1,35 @@
+uuid: 101be73c-9cca-49ce-9faa-73f9b30deaa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.last_leave_taken
+  module:
+    - user
+    - views
+  theme:
+    - bootstrap
+id: views_block__last_leave_taken_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:last_leave_taken-block_1'
+settings:
+  id: 'views_block:last_leave_taken-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      hr: hr

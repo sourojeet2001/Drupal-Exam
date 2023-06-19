@@ -1,0 +1,35 @@
+uuid: 01ff2d23-6358-46e1-a745-c5c592fdd12a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar-menu
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: sidebarmenu
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:sidebar-menu'
+settings:
+  id: 'system_menu_block:sidebar-menu'
+  label: 'Sidebar Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      hr: hr
