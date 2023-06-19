@@ -1,0 +1,35 @@
+uuid: de59fee9-0efc-4f5f-bc0d-9e32cd8b7fec
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.last_salary_processed
+  module:
+    - user
+    - views
+  theme:
+    - bootstrap
+id: views_block__last_salary_processed_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:last_salary_processed-block_1'
+settings:
+  id: 'views_block:last_salary_processed-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: '1'
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      hr: hr

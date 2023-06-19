@@ -1,0 +1,23 @@
+uuid: f07f27d9-9d0f-4d6e-af20-ad78b6247c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_allowances
+    - node.type.salary_details
+id: node.salary_details.field_special_allowances
+field_name: field_special_allowances
+entity_type: node
+bundle: salary_details
+label: 'Special Allowances'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1000
+  max: 5000
+  prefix: ''
+  suffix: ''
+field_type: integer
